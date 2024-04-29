@@ -1,0 +1,278 @@
+/**
+ * Theme Name: APM Consulting Template
+ * Author: ashrafulsarkar47@gmail.com
+ * Support: ashrafulsarkar47@gmail.com
+ * Version: 1.0.0
+*/
+/*======================
+    Theme default css
+=====================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--site_text_color);
+    font-size: 16px;
+}
+img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+a,
+.button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus,
+a:focus-visible,
+a:visited,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: var(--site_secondary_color);
+}
+a:hover {
+    color: var(--site_secondary_color);
+}
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+h1 {
+    font-size: 44px;
+    line-height: 135%;
+    font-weight: 500;
+}
+h2 {
+    font-size: 40px;
+    line-height: 135%;
+    font-weight: 500;
+}
+h3 {
+    font-size: 32px;
+    line-height: 135%;
+    font-weight: 500;
+}
+h4 {
+    font-size: 20px;
+    line-height: 135%;
+    font-weight: 500;
+}
+h5 {
+    font-size: 18px;
+    line-height: 135%;
+    font-weight: 500;
+}
+h6 {
+    font-size: 16px;
+    line-height: 135%;
+    font-weight: 500;
+}
+ul, ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-position: inside;
+    list-style: none;
+}
+p {
+    margin-bottom: 0;
+}
+*::-moz-selection {
+    background: var(--site_secondary_color);
+    color: #fff;
+    text-shadow: none;
+}
+::-moz-selection {
+    background: var(--site_secondary_color);
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: var(--site_secondary_color);
+    color: #fff;
+    text-shadow: none;
+}
+*::-moz-placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+}
+*::placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+/*==========================
+	Herder css 
+==========================*/
+header {
+    padding: 40px 0 21px 0;
+    position: relative;
+}
+header .header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: -1;
+}
+.logo {
+    max-width: 120px;
+}
+.logo a {
+    display: block;
+    line-height: 0;
+}
+.primary-menu ul li {
+    display: inline-block;
+}
+.primary-menu ul {
+    text-align: right;
+}
+.primary-menu ul li a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.5;
+    padding: 15px;
+}
+.hc-offcanvas-nav li a {
+    opacity: 0.5;
+}
+.primary-menu ul li.current-menu-item a,
+.primary-menu ul li a:hover,
+.hc-offcanvas-nav li.current-menu-item a,
+.hc-offcanvas-nav li a:hover,
+.primary-menu ul li.current-page-ancestor a {
+    opacity: 1;
+}
+/*=================
+    Footer
+================*/
+footer {
+    background: #000000;
+    padding: 12px 0 12px 0;
+}
+.copyright p {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+}
+/*===================
+    Blog Section
+===================*/
+.page-title {
+    text-align: center;
+}
+.contant-part {
+    padding: 60px 0;
+}
+.page_content {
+    padding: 80px 0;
+}
+.post-navigation {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(90, 90, 90);
+}
+#commentform label {
+    display: block;
+}
+#commentform textarea,
+#commentform input {
+    width: 100%;
+    border: 1px solid #c5c5c5;
+    resize: none;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    margin-bottom: 16px;
+    padding: 10px;
+}
+#commentform input {
+    height: 45px;
+}
+#commentform input#submit {
+    background: var(--site_primary_color);
+    color: #fff;
+    padding: 9px 11px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+#commentform #wp-comment-cookies-consent {
+    height: inherit;
+    width: inherit;
+}
+#commentform .comment-form-cookies-consent label {
+    display: inline-block;
+}
+.widget_block {
+    box-shadow: 0 0 10px 0px #a3a3a3;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.not-found-content {
+    text-align: center;
+    padding: 100px 0;
+}
+.not-found-content h1 {
+    font-size: 90px;
+    line-height: 1.5;
+    color: var(--site_primary_color);
+}
+@media (max-width: 575px) {
+    header {
+        padding: 25px 0;
+    }
+}
