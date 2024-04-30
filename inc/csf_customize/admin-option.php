@@ -71,7 +71,7 @@ if ( class_exists( 'CSF' ) ) {
 
         // theme and wrapper classname
         'nav'                     => 'normal',
-        'theme'                   => 'dark',
+        'theme'                   => 'light',
         'class'                   => '',
 
         // external default values

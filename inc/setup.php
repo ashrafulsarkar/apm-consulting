@@ -46,6 +46,7 @@ if ( !function_exists( 'apm_setup' ) ) {
         register_nav_menus(
             array(
                 'main_menu' => esc_html__( 'Main Menu', 'apm' ),
+                'footer_menu' => esc_html__( 'Footer Menu', 'apm' ),
             )
         );
 
@@ -68,9 +69,6 @@ if ( !function_exists( 'apm_setup' ) ) {
 
         // Add theme support for selective refresh for widgets.
         add_theme_support( 'customize-selective-refresh-widgets' );
-
-        add_image_size( 'blog_image', 1200, 900 );
-
     }
     add_action( 'after_setup_theme', 'apm_setup' );
 }

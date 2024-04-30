@@ -13,19 +13,19 @@ CSF::createSection( $prefix, array(
             'id'          => 'apm-primary-color',
             'type'        => 'color',
             'title'       => 'Primary Color',
-            'default'     => '#313235',
+            'default'     => '#BD1C00',
         ),
         array(
             'id'          => 'apm-secondary-color',
             'type'        => 'color',
             'title'       => 'Secondary Color',
-            'default'     => '#292A2D',
+            'default'     => '#333333',
         ),
         array(
             'id'          => 'apm-text-color',
             'type'        => 'color',
             'title'       => 'Text Color',
-            'default'     => '#000000',
+            'default'     => '#262626',
         ),
     ),
 ) );

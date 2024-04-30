@@ -18,9 +18,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php
-	$apm_primary_color   = cs_get_option( 'apm-primary-color', '#313235' );
-	$apm_secondary_color = cs_get_option( 'apm-secondary-color', '#292A2D' );
-	$apm_text_color      = cs_get_option( 'apm-text-color', '#000000' );
+	$apm_primary_color   = cs_get_option( 'apm-primary-color', '#BD1C00' );
+	$apm_secondary_color = cs_get_option( 'apm-secondary-color', '#333333' );
+	$apm_text_color      = cs_get_option( 'apm-text-color', '#262626' );
 	?>
 	<style>
 		:root {
@@ -45,13 +45,10 @@
 	$apm_logo     = cs_get_option( 'apm-header-logo' );
 	$apm_logo_url = isset( $apm_logo['url'] ) ? $apm_logo['url'] : '';
 	?>
-	<header>
-		<div class="header-image">
-			<img src="<?php echo APM_ROOT_IMG . '/header.png'?>" alt="">
-		</div>
+	<header class="site-header">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-sm-4 col-6">
+				<div class="col-md-2">
 					<?php if ( ! empty( $apm_logo_url ) ) { ?>
 						<div class="logo">
 							<a href="<?php echo home_url(); ?>">
@@ -61,14 +58,14 @@
 					<?php } else { ?>
 						<div class="site-branding">
 							<a href="<?php echo home_url(); ?>">
-								<h2>
+								<h6>
 									<?php echo bloginfo( 'name' ) ?>
-								</h2>
+								</h6>
 							</a>
 						</div>
 					<?php } ?>
 				</div>
-				<div class="col-sm-8 col-6">
+				<div class="col-md-8">
 					<div class="primary-menu">
 						<nav id="main-nav" class="main-menu">
 							<!-- mobile sidebar logo -->
@@ -91,6 +88,9 @@
 							?>
 						</nav>
 					</div>
+				</div>
+				<div class="col-md-2">
+
 				</div>
 			</div>
 		</div>
