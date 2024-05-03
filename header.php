@@ -44,11 +44,16 @@
 	wp_body_open();
 	$apm_logo     = cs_get_option( 'apm-header-logo' );
 	$apm_logo_url = isset( $apm_logo['url'] ) ? $apm_logo['url'] : '';
+
+	$apm_header_btn    = cs_get_option( 'apm-header-btn' );
+	$apm_header_url    = isset( $apm_header_btn['url'] ) ? $apm_header_btn['url'] : '';
+	$apm_header_text   = isset( $apm_header_btn['text'] ) ? $apm_header_btn['text'] : '';
+	$apm_header_target = isset( $apm_header_btn['target'] ) ? $apm_header_btn['target'] : '';
 	?>
 	<header class="site-header">
 		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-md-2">
+			<div class="header_content">
+				<div class="logo_part">
 					<?php if ( ! empty( $apm_logo_url ) ) { ?>
 						<div class="logo">
 							<a href="<?php echo home_url(); ?>">
@@ -65,14 +70,14 @@
 						</div>
 					<?php } ?>
 				</div>
-				<div class="col-md-8">
+				<div class="menu_part">
 					<div class="primary-menu">
 						<nav id="main-nav" class="main-menu">
 							<!-- mobile sidebar logo -->
 							<?php
-							if( ! empty( $apm_logo_url ) ){ ?>
+							if ( ! empty( $apm_logo_url ) ) { ?>
 								<ul>
-									<li class="d-block d-sm-none">
+									<li class="d-block d-lg-none">
 										<div class="logo mobile-nav">
 											<img src="<?php echo $apm_logo_url; ?>" alt="logo">
 										</div>
@@ -86,12 +91,29 @@
 								'container'      => "ul",
 							) );
 							?>
+							<?php
+							if ( $apm_header_text !== '' ) { ?>
+								<ul>
+									<li class="d-block d-lg-none">
+										<div class="header_btn">
+											<a href="<?php echo $apm_header_url; ?>"
+												target="<?php echo $apm_header_target; ?>"><?php echo $apm_header_text; ?></a>
+										</div>
+									</li>
+								</ul>
+							<?php } ?>
 						</nav>
 					</div>
 				</div>
-				<div class="col-md-2">
-
-				</div>
+				<?php
+				if ( $apm_header_text !== '' ) { ?>
+					<div class="button_part d-none d-lg-block">
+						<div class="header_btn">
+							<a href="<?php echo $apm_header_url; ?>"
+								target="<?php echo $apm_header_target; ?>"><?php echo $apm_header_text; ?></a>
+						</div>
+					</div>
+				<?php } ?>
 			</div>
 		</div>
 	</header>

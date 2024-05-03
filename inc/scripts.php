@@ -11,8 +11,9 @@ function apm_scripts() {
 	wp_enqueue_style( 'bootstrap-grid', APM_ROOT_CSS . '/bootstrap-grid.min.css' );
 	wp_enqueue_style( 'hc-offcanvas-nav', APM_ROOT_CSS . '/hc-offcanvas-nav.css' );
 	wp_enqueue_style( 'fontawesome', APM_ROOT_CSS . '/fontawesome.min.css' );
-	wp_enqueue_style( 'APM-main-style', APM_ROOT_CSS . '/style.css', [], APM_VERSION );
-	wp_enqueue_style( 'APM-style', get_stylesheet_uri(), [], APM_VERSION );
+	wp_enqueue_style( 'apm-main-style', APM_ROOT_CSS . '/style.css', [], APM_VERSION );
+	wp_enqueue_style( 'apm-main-responsive', APM_ROOT_CSS . '/responsive.css', [], APM_VERSION );
+	wp_enqueue_style( 'apm-style', get_stylesheet_uri(), [], APM_VERSION );
 
 	wp_enqueue_script( 'hc-offcanvas-nav', APM_ROOT_JS . '/hc-offcanvas-nav.js', ['jquery'], '6.1.5', true );
 	wp_enqueue_script( 'apm-script', APM_ROOT_JS . '/main.js', ['jquery'], APM_VERSION, true );

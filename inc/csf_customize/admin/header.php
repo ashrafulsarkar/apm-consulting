@@ -17,5 +17,14 @@ CSF::createSection( $prefix, array(
             'url'      => false,
             'library'  => 'image',
         ),
+        array(
+            'id'       => 'apm-header-btn',
+            'type'     => 'link',
+            'title'    => 'Button',
+            'default'  => array(
+              'url'    => '#',
+              'text'   => 'Demo anfordern'
+            ),
+        ),
     ),
 ) );
