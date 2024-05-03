@@ -6,7 +6,7 @@
  */
 CSF::createSection( $prefix, array(
     'id'     => 'apm_site_color',
-    'title'  => 'Color Settings',
+    'title'  => 'Color',
     'icon'   => 'fas fa-eye-dropper',
     'fields' => array(
         array(

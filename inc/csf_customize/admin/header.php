@@ -13,7 +13,7 @@ CSF::createSection( $prefix, array(
             'id'       => 'apm-header-logo',
             'type'     => 'media',
             'title'    => 'Header Logo',
-            'subtitle' => esc_html__( '(120x50)px', 'apm' ),
+            'subtitle' => esc_html__( '(153x40)px', 'apm' ),
             'url'      => false,
             'library'  => 'image',
         ),
