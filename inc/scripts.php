@@ -7,6 +7,7 @@
 
 function apm_scripts() {
 	wp_enqueue_style( 'google-font-inter', '//fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap' );
+	wp_enqueue_style( 'google-font-inter-tight', '//fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap' );
 	
 	wp_enqueue_style( 'bootstrap-grid', APM_ROOT_CSS . '/bootstrap-grid.min.css' );
 	wp_enqueue_style( 'hc-offcanvas-nav', APM_ROOT_CSS . '/hc-offcanvas-nav.css' );
