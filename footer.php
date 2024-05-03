@@ -11,7 +11,7 @@
 
 ?>
 <footer class="site-footer">
-	<div class="footer-top">
+	<div class="footer-top" style="background-image: url(<?php echo APM_ROOT_IMG.'/footer-bg.svg'?>)">
 		<div class="container">
 			<div class="footer_wraper">
 				<div class="footer_logo_part">

@@ -36,7 +36,18 @@
     .site-header {
         padding: 20px 0 19px;
     }
-
+    .footer_wraper {
+        gap: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer_logo {
+        margin: auto;
+    }
+    .footer-top {
+        background-image: none !important;
+        padding: 65px 0 65px 0;
+    }
 }
 
  

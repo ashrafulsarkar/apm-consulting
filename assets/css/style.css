@@ -237,7 +237,53 @@ input[type="number"]::-webkit-outer-spin-button {
 /*=================
     Footer
 ================*/
-
+.footer-top {
+    padding: 105px 0 107px 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.footer_wraper {
+    display: flex;
+    column-gap: 100px;
+}
+.footer_logo {
+    max-width: 153px;
+}
+.social_part {
+    margin-top: 20px;
+}
+.social_part ul li {
+    display: inline-block;
+}
+.social_part ul li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+}
+.footer_menu_part ul li a,
+.footer_contact_part a,
+.footer_address_part p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+}
+.footer_contact_part a {
+    display: block;
+}
+.copyright p {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 13px 0;
+}
 /*===================
     Blog Section
 ===================*/
