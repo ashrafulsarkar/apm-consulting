@@ -60,9 +60,9 @@ function apm_register_required_plugins() {
 	$plugins = array(
 		// This is an example of how to include a plugin bundled with a theme.
 		array(
-			'name'               => 'Piotnet Addons For Elementor Pro',
-			'slug'               => 'piotnet-addons-for-elementor-pro',
-			'source'             => get_template_directory() . '/plugins/piotnet-addons-for-elementor-pro.zip', 
+			'name'               => 'APM Elementor Addon',
+			'slug'               => 'apm-elementor',
+			'source'             => get_template_directory() . '/plugins/apm-elementor.zip', 
 			'required'           => true,
 		),
 
@@ -70,11 +70,6 @@ function apm_register_required_plugins() {
 		array(
 			'name'      => 'Elementor Website Builder',
 			'slug'      => 'elementor',
-			'required'  => true,
-		),
-		array(
-			'name'      => 'Piotnet Addons For Elementor',
-			'slug'      => 'piotnet-addons-for-elementor',
 			'required'  => true,
 		),
 	);
