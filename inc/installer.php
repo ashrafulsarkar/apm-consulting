@@ -72,6 +72,11 @@ function apm_register_required_plugins() {
 			'slug'      => 'elementor',
 			'required'  => true,
 		),
+		array(
+			'name'      => 'Forminator – Contact Form, Payment Form & Custom Form Builder',
+			'slug'      => 'forminator',
+			'required'  => true,
+		),
 	);
 
 	/*

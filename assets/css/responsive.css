@@ -50,7 +50,16 @@
     }
 }
 
- 
+@media (max-width: 782px) {
+    .apm_contact .forminator-checkbox__wrapper {
+        margin-bottom: 0px;
+    }
+    .apm_contact .forminator-button-submit {
+        position: inherit !important;
+        right: inherit;
+        top: inherit;
+    }
+}
 /* Extra small Device. */
 @media (max-width: 767px) {
     .site-title h1 {
