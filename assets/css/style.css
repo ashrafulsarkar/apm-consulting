@@ -327,6 +327,7 @@ input[type="number"]::-webkit-outer-spin-button {
     line-height: 12px !important;
     color: #333333 !important;
     margin-bottom: 10px !important;
+    font-weight: 400 !important;
 }
 .apm_contact input,
 .apm_contact span.select2-selection  {
