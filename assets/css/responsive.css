@@ -53,8 +53,13 @@
  
 /* Extra small Device. */
 @media (max-width: 767px) {
-
- 
+    .site-title h1 {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+    .apm-hero {
+        padding: 90px 0 110px 0;
+    }
 }
  
 /* SM Small Device :550px. */

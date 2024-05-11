@@ -302,6 +302,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .page-content {
     font-size: 16px;
     line-height: 24px;
+    word-wrap: break-word;
 }
 .post-navigation {
     margin-bottom: 30px;
