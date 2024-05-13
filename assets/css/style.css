@@ -322,7 +322,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /*===================
     contact Form
 ===================*/
-.apm_contact label {
+.apm_contact label, .apm_addon_form label {
     font-size: 16px !important;
     line-height: 12px !important;
     color: #333333 !important;
@@ -330,23 +330,31 @@ input[type="number"]::-webkit-outer-spin-button {
     font-weight: 400 !important;
 }
 .apm_contact input,
-.apm_contact span.select2-selection  {
+.apm_contact span.select2-selection,
+.apm_addon_form input,
+.apm_addon_form span.select2-selection {
     background: #fff !important;
     border: 1px solid #E6E6E6 !important;
     border-radius: 8px !important;
     height: 44px !important;
 }
-.apm_contact textarea{
+.apm_contact textarea,
+.apm_addon_form textarea{
     background: #fff !important;
     border: 1px solid #E6E6E6 !important;
     border-radius: 8px !important;
     min-height: 176px !important;
 }
-.apm_contact .forminator-ui.forminator-custom-form:not(.forminator-size--small)[data-grid=open] .forminator-row:not(:last-child) {
+.apm_contact .forminator-ui.forminator-custom-form:not(.forminator-size--small)[data-grid=open] .forminator-row:not(:last-child),
+.apm_addon_form .forminator-ui.forminator-custom-form:not(.forminator-size--small)[data-grid=open] .forminator-row:not(:last-child) {
     margin-bottom: 24px;
 }
 .apm_contact .select2-selection__arrow [class*=forminator-icon-]:before {
     color: #333333 !important;
+    font-size: 9px !important;
+}
+.apm_addon_form .select2-selection__arrow [class*=forminator-icon-]:before {
+    color: #BD1C00 !important;
     font-size: 9px !important;
 }
 .forminator-select.forminator-select-dropdown-container--open .forminator-select-dropdown.forminator-dropdown--default {
@@ -415,6 +423,18 @@ input[type="number"]::-webkit-outer-spin-button {
     background: #B21A00 !important;
     box-shadow: none !important;
 }
-.apm_contact form {
+.apm_contact form,
+.apm_addon_form form {
     margin-bottom: 0 !important;
+}
+.apm_addon_form .forminator-button-submit {
+    background: var(--site_primary_color) !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    padding: 13px 30px !important;
+    border-radius: 50px !important;
+}
+.apm_addon_form .forminator-button-submit:hover {
+    background: #B21A00 !important;
+    box-shadow: none !important;
 }
