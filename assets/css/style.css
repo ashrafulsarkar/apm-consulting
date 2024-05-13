@@ -133,7 +133,6 @@ p {
     font-size: 14px;
     opacity: 1;
 }
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -188,7 +187,7 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 8px 13px;
     display: block;
 }
-.primary-menu ul li:hover > a {
+.primary-menu ul li:hover>a {
     color: var(--site_primary_color);
 }
 .primary-menu ul li ul.sub-menu {
@@ -201,7 +200,7 @@ input[type="number"]::-webkit-outer-spin-button {
     visibility: hidden;
     opacity: 0;
 }
-.primary-menu ul li:hover ul.sub-menu{
+.primary-menu ul li:hover ul.sub-menu {
     visibility: visible;
     opacity: 1;
 }
@@ -318,7 +317,6 @@ input[type="number"]::-webkit-outer-spin-button {
     line-height: 1.5;
     color: var(--site_primary_color);
 }
-
 /*===================
     contact Form
 ===================*/
@@ -339,7 +337,7 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 44px !important;
 }
 .apm_contact textarea,
-.apm_addon_form textarea{
+.apm_addon_form textarea {
     background: #fff !important;
     border: 1px solid #E6E6E6 !important;
     border-radius: 8px !important;
