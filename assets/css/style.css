@@ -143,7 +143,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .site-header {
     padding: 35px 0 34px;
     border-bottom: 1px solid var(--site_primary_color);
-    margin-bottom: 2px;
 }
 .header_content {
     display: flex;
