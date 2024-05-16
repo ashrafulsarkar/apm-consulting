@@ -275,12 +275,15 @@ input[type="number"]::-webkit-outer-spin-button {
 .footer_contact_part a {
     display: block;
 }
-.copyright p {
+.copyright p, .copyright p a {
     text-align: center;
     color: #fff;
     font-size: 14px;
     line-height: 22px;
     padding: 13px 0;
+}
+.footer_menu_part ul li a:hover, .footer_contact_part a:hover, .copyright p a:hover {
+    color: var(--site_primary_color);
 }
 /*===================
     Blog Section
