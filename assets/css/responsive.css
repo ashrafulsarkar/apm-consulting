@@ -11,6 +11,9 @@
     .logo {
         max-width: 120px;
     }
+    .apm_addon_form .forminator-button.forminator-button-back {
+        right: 200px;
+    }
 }
 /* MD Device :768px. */
 @media (max-width: 991px) {
@@ -37,6 +40,21 @@
     .footer-top {
         background-image: none !important;
         padding: 65px 0;
+    }
+    .apm_addon_form .forminator-pagination-footer {
+        margin-top: 30px !important;
+    }
+    .apm_addon_form .forminator-button.forminator-button-next {
+        margin-top: 0px !important;
+    }
+    .apm_addon_form .forminator-button {
+        position: inherit !important;
+        top: 0px;
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+    .apm_addon_form .forminator-button.forminator-button-back {
+        right: 0;
     }
 }
 @media (max-width: 782px) {
