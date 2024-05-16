@@ -444,10 +444,6 @@ input[type="number"]::-webkit-outer-spin-button {
     background: #B21A00 !important;
 }
 .apm_addon_form {
-    padding: 40px;
-    background: #F7F7F7;
-    border-radius: 16px;
-    position: relative;
     margin-top: 40px;
 }
 .apm_addon_form .forminator-pagination-steps {
@@ -455,6 +451,17 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100%;
     top: -40px;
     left: 0;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+    margin-bottom: 30px !important;
 }
 .apm_addon_form .forminator-pagination-steps .forminator-break:last-child,
 .apm_addon_form .forminator-pagination-steps button {
@@ -465,6 +472,9 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0px 16px;
     background: #F7F7F7 !important;
     border-radius: 3px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 .apm_addon_form .forminator-pagination-steps .forminator-break:nth-last-child(3) {
     margin-right: 0 !important;
@@ -501,4 +511,16 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .apm_addon_form .forminator-button.forminator-button-back {
     right: 293px;
+}
+.apm_addon_form .forminator-ui.forminator-custom-form[data-design=default]:not(.forminator-size--small) .forminator-pagination-steps .forminator-break:first-child{
+    display: block !important;
+}
+.apm_addon_form .forminator-ui.forminator-custom-form[data-design=default] .forminator-pagination-steps .forminator-break {
+    width: auto !important;
+}
+.apm_addon_form .forminator-ui.forminator-custom-form[data-design=default]:not(.forminator-size--small) .forminator-pagination-steps .forminator-break:before {
+    width: 100%;
+}
+.apm_addon_form .forminator-ui.forminator-custom-form[data-design=default]:not(.forminator-size--small) .forminator-pagination-steps .forminator-step.forminator-current~.forminator-break:before {
+    width: 0;
 }
