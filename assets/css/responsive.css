@@ -11,8 +11,10 @@
     .logo {
         max-width: 120px;
     }
+}
+@media (min-width: 992px) and (max-width: 1150px) {
     .apm_addon_form .forminator-button.forminator-button-back {
-        right: 200px;
+        right: 315px;
     }
 }
 /* MD Device :768px. */
