@@ -11,6 +11,9 @@
     .logo {
         max-width: 120px;
     }
+    .primary-menu ul li.menu-item-has-children::before {
+        right: -5px;
+    }
 }
 @media (min-width: 992px) and (max-width: 1150px) {
     .apm_addon_form .forminator-button.forminator-button-back {
