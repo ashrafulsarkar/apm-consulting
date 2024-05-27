@@ -290,7 +290,7 @@ input[type="number"]::-webkit-outer-spin-button {
 ===================*/
 .apm-hero {
     background: var(--site_primary_color);
-    padding: 162px 0 186px 0;
+    padding-top: 162px;
     color: #fff;
     font-family: "Inter Tight", sans-serif;
     background-size: contain;

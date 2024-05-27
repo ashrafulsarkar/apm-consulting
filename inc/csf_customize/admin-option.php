@@ -80,6 +80,7 @@ if ( class_exists( 'CSF' ) ) {
     ) );
 
     require_once APM_ROOT . '/inc/csf_customize/admin/header.php';
+    require_once APM_ROOT . '/inc/csf_customize/admin/page.php';
     require_once APM_ROOT . '/inc/csf_customize/admin/color.php';
     require_once APM_ROOT . '/inc/csf_customize/admin/footer.php';
     require_once APM_ROOT . '/inc/csf_customize/admin/backup.php';

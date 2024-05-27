@@ -80,6 +80,7 @@
     }
     .apm-hero {
         padding: 90px 0 110px 0;
+        height: inherit !important;
     }
     .site-title h1 {
         max-width: 460px;
