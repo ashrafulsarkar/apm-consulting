@@ -1,0 +1,25 @@
+; (function ($) {
+	function apm_select_option(value, text) {
+		$('.addonform_select select').val(value);
+		$('.addonform_select .select2-selection__rendered').text(text);
+		$('.addonform_select .select2-selection__rendered').attr('title', text);
+	}
+
+	$(document).ready(function() {
+		$("#apm_recycling_btn").on("click", function() {
+			apm_select_option('Recyclinggebühr-vRG', 'Recyclinggebühr vRG');
+		});
+		$("#apm_online_in_btn").on("click", function() {
+			apm_select_option('Online-UST-ID-Prüfung', 'Online UST-ID-Prüfung');
+		});
+		$("#apm_Konzernpreise_btn").on("click", function() {
+			apm_select_option('Konzernpreise-kopieren', 'Konzernpreise kopieren');
+		});
+		$("#apm_Cockpit_btn").on("click", function() {
+			apm_select_option('Cockpit-Lagerumschlag', 'Cockpit Lagerumschlag');
+		});
+		$("#apm_Ressourcenlisten_btn").on("click", function() {
+			apm_select_option('Ressourcenlisten-mergen', 'Ressourcenlisten mergen');
+		});
+	});
+})(jQuery);
