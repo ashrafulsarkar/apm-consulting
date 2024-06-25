@@ -60,7 +60,7 @@
 						<a href="mailto:<?php echo $apm_email; ?>"><?php echo $apm_email; ?></a>
 					<?php }
 					if ( $apm_email ) { ?>
-						<a href="tel:<?php echo $apm_phone; ?>"><?php echo 't: '.$apm_phone; ?></a>
+						<a href="tel:<?php echo $apm_phone; ?>"><?php echo $apm_phone; ?></a>
 					<?php } ?>
 				</div>
 			</div>
