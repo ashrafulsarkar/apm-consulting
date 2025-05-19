@@ -80,5 +80,11 @@ Schweiz',
 			'output_mode' => 'background-color',
 			'default'     => '#333333'
 		),
+		array(
+			'id'      => 'apm-shortcode',
+			'type'    => 'text',
+			'title'   => 'Load Shortcode Before Footer',
+			'default' => '',
+		),
 	),
 ) );

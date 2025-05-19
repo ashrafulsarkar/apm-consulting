@@ -10,6 +10,10 @@
  */
 
 ?>
+<?php $apm_shortcode = cs_get_option( 'apm-shortcode' ); ?>
+<?php if ( $apm_shortcode ) { ?>
+	<?php echo do_shortcode( $apm_shortcode ); ?>
+<?php } ?>
 <footer class="site-footer">
 	<div class="footer-top" style="background-image: url(<?php echo APM_ROOT_IMG.'/footer-bg.svg'?>)">
 		<div class="container">
